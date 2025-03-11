@@ -1,18 +1,369 @@
 {
-  "transactions": [
-    {
-      "id": 1,
-      "date": "2024-02-01",
-      "type": "income",
-      "amount": 15000,
-      "description": "Оплата за проект"
-    },
-    {
-      "id": 2,
-      "date": "2024-02-02",
-      "type": "expense",
-      "amount": 5000,
-      "description": "Оплата подрядчику"
-    }
-  ]
-}
+    "transactions": [
+      {
+        "id": 1,
+        "date": "2024-02-01",
+        "type": "income",
+        "amount": 15000,
+        "description": "Оплата за проект"
+      },
+      {
+        "id": 2,
+        "date": "2024-02-02",
+        "type": "expense",
+        "amount": 5000,
+        "description": "Оплата подрядчику"
+      },
+      {
+        "id": 3,
+        "date": "2024-02-03",
+        "type": "income",
+        "amount": 12000,
+        "description": "Фриланс-проект"
+      },
+      {
+        "id": 4,
+        "date": "2024-02-04",
+        "type": "expense",
+        "amount": 3500,
+        "description": "Покупка оборудования"
+      },
+      {
+        "id": 5,
+        "date": "2024-02-05",
+        "type": "income",
+        "amount": 18000,
+        "description": "Продажа услуги"
+      },
+      {
+        "id": 6,
+        "date": "2024-02-06",
+        "type": "expense",
+        "amount": 4000,
+        "description": "Командировочные расходы"
+      },
+      {
+        "id": 7,
+        "date": "2024-02-07",
+        "type": "income",
+        "amount": 10000,
+        "description": "Консультация"
+      },
+      {
+        "id": 8,
+        "date": "2024-02-08",
+        "type": "expense",
+        "amount": 2000,
+        "description": "Расходы на интернет"
+      },
+      {
+        "id": 9,
+        "date": "2024-02-09",
+        "type": "income",
+        "amount": 16000,
+        "description": "Партнерский бонус"
+      },
+      {
+        "id": 10,
+        "date": "2024-02-10",
+        "type": "expense",
+        "amount": 4500,
+        "description": "Ремонт оборудования"
+      },
+      {
+        "id": 11,
+        "date": "2024-02-11",
+        "type": "income",
+        "amount": 14000,
+        "description": "Оплата за консультацию"
+      },
+      {
+        "id": 12,
+        "date": "2024-02-12",
+        "type": "expense",
+        "amount": 5000,
+        "description": "Аренда офиса"
+      },
+      {
+        "id": 13,
+        "date": "2024-02-13",
+        "type": "income",
+        "amount": 13000,
+        "description": "Дизайн проекта"
+      },
+      {
+        "id": 14,
+        "date": "2024-02-14",
+        "type": "expense",
+        "amount": 2500,
+        "description": "Покупка софта"
+      },
+      {
+        "id": 15,
+        "date": "2024-02-15",
+        "type": "income",
+        "amount": 19000,
+        "description": "Разработка сайта"
+      },
+      {
+        "id": 16,
+        "date": "2024-02-16",
+        "type": "expense",
+        "amount": 3200,
+        "description": "Реклама"
+      },
+      {
+        "id": 17,
+        "date": "2024-02-17",
+        "type": "income",
+        "amount": 11000,
+        "description": "Продажа курса"
+      },
+      {
+        "id": 18,
+        "date": "2024-02-18",
+        "type": "expense",
+        "amount": 2800,
+        "description": "Серверные расходы"
+      },
+      {
+        "id": 19,
+        "date": "2024-02-19",
+        "type": "income",
+        "amount": 15000,
+        "description": "Оплата за разработку"
+      },
+      {
+        "id": 20,
+        "date": "2024-02-20",
+        "type": "expense",
+        "amount": 3500,
+        "description": "Обновление ПО"
+      },
+      {
+        "id": 21,
+        "date": "2024-02-21",
+        "type": "income",
+        "amount": 12500,
+        "description": "Оплата за консультацию"
+      },
+      {
+        "id": 22,
+        "date": "2024-02-22",
+        "type": "expense",
+        "amount": 2200,
+        "description": "Маркетинговые расходы"
+      },
+      {
+        "id": 23,
+        "date": "2024-02-23",
+        "type": "income",
+        "amount": 17000,
+        "description": "Партнерская программа"
+      },
+      {
+        "id": 24,
+        "date": "2024-02-24",
+        "type": "expense",
+        "amount": 4100,
+        "description": "Обслуживание сайта"
+      },
+      {
+        "id": 25,
+        "date": "2024-02-25",
+        "type": "income",
+        "amount": 15500,
+        "description": "Оплата за обучение"
+      },
+      {
+        "id": 26,
+        "date": "2024-02-26",
+        "type": "expense",
+        "amount": 3300,
+        "description": "Закупка материалов"
+      },
+      {
+        "id": 27,
+        "date": "2024-02-27",
+        "type": "income",
+        "amount": 13500,
+        "description": "Рекламный доход"
+      },
+      {
+        "id": 28,
+        "date": "2024-02-28",
+        "type": "expense",
+        "amount": 2900,
+        "description": "Коммунальные расходы"
+      },
+      {
+        "id": 29,
+        "date": "2024-02-29",
+        "type": "income",
+        "amount": 14500,
+        "description": "Фриланс-заказ"
+      },
+      {
+        "id": 30,
+        "date": "2024-03-01",
+        "type": "expense",
+        "amount": 3700,
+        "description": "Покупка хостинга"
+      },
+      {
+        "id": 31,
+        "date": "2024-03-02",
+        "type": "income",
+        "amount": 16000,
+        "description": "Партнерский доход"
+      },
+      {
+        "id": 32,
+        "date": "2024-03-03",
+        "type": "expense",
+        "amount": 2400,
+        "description": "Обновление оборудования"
+      },
+      {
+        "id": 33,
+        "date": "2024-03-04",
+        "type": "income",
+        "amount": 17500,
+        "description": "Оплата консультаций"
+      },
+      {
+        "id": 34,
+        "date": "2024-03-05",
+        "type": "expense",
+        "amount": 3100,
+        "description": "Программное обеспечение"
+      },
+      {
+        "id": 35,
+        "date": "2024-03-06",
+        "type": "income",
+        "amount": 13200,
+        "description": "Проектирование"
+      },
+      {
+        "id": 36,
+        "date": "2024-03-07",
+        "type": "expense",
+        "amount": 2600,
+        "description": "Интернет и связь"
+      },
+      {
+        "id": 37,
+        "date": "2024-03-08",
+        "type": "income",
+        "amount": 14800,
+        "description": "Разработка приложения"
+      },
+      {
+        "id": 38,
+        "date": "2024-03-09",
+        "type": "expense",
+        "amount": 3800,
+        "description": "Офисные закупки"
+      },
+      {
+        "id": 39,
+        "date": "2024-03-10",
+        "type": "income",
+        "amount": 14200,
+        "description": "Платёж от клиента"
+      },
+      {
+        "id": 40,
+        "date": "2024-03-11",
+        "type": "expense",
+        "amount": 3300,
+        "description": "Аренда оборудования"
+      },
+      {
+        "id": 41,
+        "date": "2024-03-12",
+        "type": "income",
+        "amount": 16700,
+        "description": "Консультационные услуги"
+      },
+      {
+        "id": 42,
+        "date": "2024-03-13",
+        "type": "expense",
+        "amount": 3500,
+        "description": "Ремонт офиса"
+      },
+      {
+        "id": 43,
+        "date": "2024-03-14",
+        "type": "income",
+        "amount": 15800,
+        "description": "Оплата за обучение"
+      },
+      {
+        "id": 44,
+        "date": "2024-03-15",
+        "type": "expense",
+        "amount": 4000,
+        "description": "Закупка канцелярии"
+      },
+      {
+        "id": 45,
+        "date": "2024-03-16",
+        "type": "income",
+        "amount": 16900,
+        "description": "Услуги дизайна"
+      },
+      {
+        "id": 46,
+        "date": "2024-03-17",
+        "type": "expense",
+        "amount": 3100,
+        "description": "Рекламный бюджет"
+      },
+      {
+        "id": 47,
+        "date": "2024-03-18",
+        "type": "income",
+        "amount": 15100,
+        "description": "Разработка сайта"
+      },
+      {
+        "id": 48,
+        "date": "2024-03-19",
+        "type": "expense",
+        "amount": 2700,
+        "description": "Операционные расходы"
+      },
+      {
+        "id": 49,
+        "date": "2024-03-20",
+        "type": "income",
+        "amount": 16500,
+        "description": "Оплата консультаций"
+      },
+      {
+        "id": 50,
+        "date": "2024-03-21",
+        "type": "expense",
+        "amount": 3400,
+        "description": "Техническое обслуживание"
+      },
+      {
+        "id": 51,
+        "date": "2024-03-22",
+        "type": "income",
+        "amount": 15800,
+        "description": "Продажа услуг"
+      },
+      {
+        "id": 52,
+        "date": "2024-03-23",
+        "type": "expense",
+        "amount": 2900,
+        "description": "Прочие расходы"
+      }
+    ]
+  }
+  

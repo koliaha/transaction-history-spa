@@ -1,27 +1,29 @@
 <!-- src/components/TransactionTable.vue -->
 <template>
-    <table class="min-w-full bg-white border">
-      <thead>
-        <tr>
-          <th class="py-2 px-4 border-b">Дата</th>
-          <th class="py-2 px-4 border-b">Тип</th>
-          <th class="py-2 px-4 border-b">Сумма</th>
-          <th class="py-2 px-4 border-b">Описание</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="item in transactions" :key="item.id" class="hover:bg-gray-50">
-          <td class="py-2 px-4 border-b">{{ item.date }}</td>
-          <td class="py-2 px-4 border-b">
-            <span :class="{'text-green-500': item.type === 'income', 'text-red-500': item.type === 'expense'}">
-              {{ item.type === 'income' ? 'Доход' : 'Расход' }}
-            </span>
-          </td>
-          <td class="py-2 px-4 border-b">{{ item.amount }}</td>
-          <td class="py-2 px-4 border-b">{{ item.description }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table class="transaction-table">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Тип</th>
+            <th>Сумма</th>
+            <th>Описание</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in transactions" :key="item.id">
+            <td>{{ item.date }}</td>
+            <td>
+              <span :class="{'income': item.type === 'income', 'expense': item.type === 'expense'}">
+                {{ item.type === 'income' ? 'Доход' : 'Расход' }}
+              </span>
+            </td>
+            <td>{{ item.amount.toLocaleString() }} ₽</td>
+            <td>{{ item.description }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </template>
   
   <script setup>
@@ -32,4 +34,70 @@
   
   const transactions = computed(() => store.paginatedTransactions);
   </script>
+  
+  <style scoped lang="scss">
+  .table-container {
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  
+    thead {
+      background-color: #3182ce;
+      color: white;
+      text-align: left;
+  
+      th {
+        padding: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-bottom: 2px solid #2563eb;
+      }
+    }
+  
+    tbody {
+      tr {
+        border-bottom: 1px solid #e2e8f0;
+        transition: background 0.2s ease-in-out;
+  
+        &:hover {
+          background-color: #f1f5f9;
+        }
+  
+        td {
+          padding: 10px;
+          color: #2d3748;
+        }
+  
+        .income {
+          color: #16a34a;
+          font-weight: 600;
+        }
+  
+        .expense {
+          color: #dc2626;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .transaction-table {
+      font-size: 12px;
+  
+      th, td {
+        padding: 8px;
+      }
+    }
+  }
+  </style>
   

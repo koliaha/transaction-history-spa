@@ -1,10 +1,10 @@
 // src/services/api.js
-import axios from 'axios';
+import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000', // Адрес мок-сервиса (например, json-server)
+  baseURL: "http://localhost:3000",
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
 
