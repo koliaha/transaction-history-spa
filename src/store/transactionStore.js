@@ -38,7 +38,7 @@ export const useTransactionStore = defineStore('transactionStore', {
     },
   },
   getters: {
-    filteredTransactions: (state) => {
+    filteredTransactions(state) {
       let data = state.transactions;
       // Фильтрация по типу
       if (state.filter.type) {
@@ -53,8 +53,9 @@ export const useTransactionStore = defineStore('transactionStore', {
       }
       return data;
     },
-    sortedTransactions: (state, getters) => {
-      const data = [...getters.filteredTransactions];
+    sortedTransactions(state) {
+      // Используем this для доступа к другим геттерам
+      const data = [...this.filteredTransactions];
       const { field, order } = state.sort;
       data.sort((a, b) => {
         let compareA = a[field];
@@ -70,12 +71,12 @@ export const useTransactionStore = defineStore('transactionStore', {
       });
       return data;
     },
-    paginatedTransactions: (state, getters) => {
+    paginatedTransactions(state) {
       const start = (state.currentPage - 1) * state.perPage;
-      return getters.sortedTransactions.slice(start, start + state.perPage);
+      return this.sortedTransactions.slice(start, start + state.perPage);
     },
-    totalPages: (state, getters) => {
-      return Math.ceil(getters.sortedTransactions.length / state.perPage);
+    totalPages(state) {
+      return Math.ceil(this.sortedTransactions.length / state.perPage);
     },
   },
 });
