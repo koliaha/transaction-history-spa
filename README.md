@@ -1,5 +1,24 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Transaction History SPA
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Установка
+
+```bash
+git clone <URL репозитория>
+cd transaction-history-spa
+npm install
+npm run dev
+```
+
+Приложение будет доступно по адресу, указанному в терминале (обычно http://localhost:5173).
+
+## Запустите мок-сервер (JSON Server):
+
+Если JSON Server не установлен глобально, установите его
+`npm install -g json-server`
+
+## Запустите сервер
+
+`json-server --watch db.json --port 3000`
+API доступно по адресу: http://localhost:3000/transactions.

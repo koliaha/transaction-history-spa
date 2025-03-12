@@ -1,4 +1,3 @@
-<!-- src/components/Pagination.vue -->
 <template>
   <div class="pagination">
     <button
@@ -43,6 +42,8 @@ const nextPage = () => {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/styles.scss";
+
 .pagination {
   display: flex;
   align-items: center;
@@ -51,29 +52,32 @@ const nextPage = () => {
   margin-top: 20px;
 
   &__button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     font-size: 14px;
-    background-color: #3182ce;
+    background-color: $primary-color;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color $transition-duration ease,
+      transform $transition-duration ease;
 
     &:hover:not(:disabled) {
-      background-color: #2b6cb0;
+      background-color: $primary-hover;
+      transform: scale(1.05);
     }
 
     &:disabled {
-      background-color: #cbd5e0;
+      background-color: $disabled-bg;
       cursor: not-allowed;
     }
   }
 
   &__info {
     font-size: 14px;
-    color: #4a5568;
+    color: $label-color;
     font-weight: 500;
+    transition: color $transition-duration ease;
   }
 }
 </style>

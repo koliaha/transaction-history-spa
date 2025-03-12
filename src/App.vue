@@ -23,16 +23,7 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-/* Определяем SCSS переменные для легкой настройки */
-$app-background: #f7fafc;
-$app-text-color: #2d3748;
-$app-container-padding: 20px;
-$app-max-width: 1200px;
-$app-title-color: #2b6cb0;
-$app-title-font-size: 2rem;
-$app-title-font-weight: 700;
-$app-title-margin-bottom: 20px;
-
+@import "./assets/styles.scss"; 
 .app-container {
   background-color: $app-background;
   color: $app-text-color;
@@ -40,7 +31,7 @@ $app-title-margin-bottom: 20px;
   max-width: $app-max-width;
   margin: 0 auto;
 
-  h1.app-title {
+  .app-title {
     color: $app-title-color;
     font-size: $app-title-font-size;
     font-weight: $app-title-font-weight;
